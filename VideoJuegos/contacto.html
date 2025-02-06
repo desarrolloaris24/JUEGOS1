@@ -26,9 +26,39 @@
      </div>
      <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
         <form>
-            <label>Escriba su nombre:</label>
-            <input type="text">
-            
+            <label>Escriba su nombre: </label>
+            <input required name="nombreCliente" type="text" placeholder="Escriba en mayusculas"> <br>
+            <label>Celular o Telefono: </label>
+            <input required name="Telefono" type="tel"> <br>
+            <label>Su edad: </label>
+            <input required name="Edad" type="number" min="18" max="50"> <br>
+            <label>Escriba su correo: </label>
+            <input required name="Correo" type="email"> <br>
+            <label>Fecha de nacimiento</label>
+            <input type="date" min="1950-12-31" max="2006-12-31"><br>
+            <label>Envia una foto:</label>
+            <input type="file" accept=".jpg .png .git" max="1MB"> <br>
+            <label>Genero:</label>
+            <input type="radio" name="Genero" value="Hombre">Hombre
+            <input type="radio" name="Genero" value="Mujer">Mujer
+            <input type="radio" name="Genero" value="no se">No se
+            <input type="radio" name="Genero" value="otro">otro <br>
+            <label>Escoge tu plan:</label>
+            <input type="checkbox" name="plan" value="Pareja">Pareja
+            <input type="checkbox" name="plan" value="Familiar">Familiar
+            <input type="checkbox" name="plan" value="Amigos">Amigos
+            <input type="checkbox" name="plan" value="Otro">Otro <br>
+            <label >selecciona una opcion de contacto:</label>
+            <select name="contacto">
+                <option value="Paloma">Paloma mensajera</option>
+                <option value="Humo">Señales de humo</option>
+                <option value="rappi">Rappi</option>
+                <option value="Otro">Otro</option>
+            </select> <br>
+            <label>mensaje:</label>
+            <textarea name="mensaje"></textarea> <br>
+            <button type="submit">enviar datos</button>
+            <button type="reset">borrar datos</button>
         </form>
      </div>
 </body>
